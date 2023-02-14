@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID Card Number"
+            android:textColor="@color/black"
+            android:textSize="30px"
+            tools:ignore="MissingConstraints"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/box"
+            android:hint="Enter Card Number"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:drawablePadding="2dp"
+            android:layout_marginTop="5dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Expire Date"
+            android:textColor="@color/black"
+            android:textSize="30px"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/box"
+            android:hint="DD/MM/YYYY"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:drawablePadding="2dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="KYC Document Upload"
+            android:textColor="@color/black"
+            android:textSize="30px"></TextView>
+        
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_gravity="center_horizontal"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardBackgroundColor="#B9B9B9">
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/idcard_document"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Take Picture  of ID Card"
+                    android:textColor="@color/black"
+                    android:layout_gravity="bottom|center"/>
+        </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+

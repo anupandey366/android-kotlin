@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Select_Language">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llLang"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSkipLan"
+                android:text="Skip"
+                android:textSize="50px"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:layout_gravity="right"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/language_sign"
+                android:id="@+id/ivLan_sign"
+                android:layout_marginTop="40dp"
+                android:padding="40px"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCYPL"
+            android:text="Choose Your Preferred Language"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:textSize="50px"
+            app:layout_constraintTop_toBottomOf="@+id/llLang"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="40px"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPSYL"
+            android:text="Please select your language"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:textSize="40px"
+            android:paddingLeft="40px"
+            app:layout_constraintTop_toBottomOf="@+id/tvCYPL"
+            android:layout_marginTop="10dp"
+            tools:ignore="MissingConstraints" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvPSYL"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/laos"
+                android:drawablePadding="20dp"
+                android:layout_marginTop="10dp"
+                android:button="@android:color/transparent"
+                android:text="Laos"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/english"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="20dp"
+                android:button="@android:color/transparent"
+                android:text="English"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/japanese"
+                android:drawablePadding="20dp"
+                android:layout_marginTop="10dp"
+                android:button="@android:color/transparent"
+                android:text="Japanese"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/chinese"
+                android:drawablePadding="20dp"
+                android:layout_marginTop="10dp"
+                android:button="@android:color/transparent"
+                android:text="Chinese"/>
+
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNext"
+            android:text="Next"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/next_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints">
+        </androidx.appcompat.widget.AppCompatButton>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+

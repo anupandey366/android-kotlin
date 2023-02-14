@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Japan_Bank</string>
+    <string name="register"><u>Register Now</u></string>
+    <string-array name="countries">
+        <item>All Countries</item>
+        <item>India</item>
+        <item>USA</item>
+
+    </string-array>
+</resources>

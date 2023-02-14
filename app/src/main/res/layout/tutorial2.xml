@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Tutorial_2">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="261dp"
+            android:layout_height="235dp"
+            android:id="@+id/ivFrame1"
+            android:src="@drawable/tutorials2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingTop="50dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvText1"
+            app:layout_constraintTop_toBottomOf="@+id/ivFrame1"
+            android:text="Scan &amp; Pay"
+            android:textSize="60px"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:layout_marginTop="40dp"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvText2"
+            app:layout_constraintTop_toBottomOf="@+id/tvText1"
+            android:text="Use MARUHAN App When you Shop, Dine and Make QR Payment, It's Easy, Fast and Secure."
+            android:textSize="30px"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="65dp"
+            android:paddingRight="65dp"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/llDot"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/tvText2"
+            android:layout_marginTop="40dp"
+            tools:ignore="MissingConstraints">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivDot11"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/dot_white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/dot_red"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivDot22"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/dot_white" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivN2"
+            android:padding="15dp"
+            android:src="@drawable/arrow_left"
+            android:background="@drawable/n2"
+            app:layout_constraintTop_toBottomOf="@+id/llDot"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivN1"
+            android:padding="15dp"
+            android:src="@drawable/arrow_right"
+            android:background="@drawable/n1"
+            app:layout_constraintTop_toBottomOf="@+id/llDot"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSkip"
+            android:text="Skip"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Choose_User">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llLogo"
+            tools:ignore="MissingConstraints">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/splash"
+                android:id="@+id/ivIcon"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                tools:ignore="MissingConstraints"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/llLogo"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello There!"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Option to Continue..."
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/llText"
+            tools:ignore="MissingConstraints">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I am an existing user"
+                android:id="@+id/rbExist"
+                android:layout_gravity="center_horizontal"
+                android:button="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="95dp"
+                android:paddingRight="95dp"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+                android:background="@drawable/radio_selector1"
+                android:textColor="@drawable/radio_color"
+                android:elevation="4dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I am a new user"
+                android:id="@+id/rbNewUser"
+                android:paddingLeft="110dp"
+                android:paddingRight="110dp"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:button="@android:color/transparent"
+                android:background="@drawable/radio_selector1"
+                android:textColor="@drawable/radio_color"
+                android:elevation="4dp"/>
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>
